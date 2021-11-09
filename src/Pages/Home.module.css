@@ -1,0 +1,59 @@
+.carouselCard{
+width:100%;
+}
+
+.carouselCard img{
+    width:100%;
+}
+
+.carouselarrowleft:hover{
+    background:linear-gradient(to right,rgba(0,0,0,0.7) , rgba(0,0,0,0));
+}
+
+
+.carouselarrowright,.carouselarrowleft{
+    background:transparent;
+}
+.carouselarrowright:hover{
+    background:linear-gradient(to left,rgba(0,0,0,0.7) , rgba(0,0,0,0));
+
+}
+
+.SlideCard{
+    display:flex;
+    flex-direction: column;
+    padding:1vh;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    outline:none;
+    height:21vh;
+    width:290px!important;
+    z-index:-1;
+}
+
+.SlideCard img{
+    width:100%;
+    border-radius: 5px;
+    transition-duration: 500px;
+    height:20vh;
+    object-fit: cover;
+}
+
+.SlideCard:hover{
+    position:absolute;
+    background:#1b2530;
+    
+    transform:translate(-1vh,-2vh);
+    padding:0vh;
+    border-radius: 5px;
+    z-index:500;
+    height:fit-content;
+    border:2px solid rgb(0, 108, 197);
+}
+
+
+.SlideCard:hover > div{
+    visibility:visible;
+}

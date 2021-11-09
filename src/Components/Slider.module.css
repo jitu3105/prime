@@ -1,0 +1,123 @@
+.nextArrow{
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    right:0;
+    z-index: 1;
+    display:flex;
+    height:100%;
+    top:0;
+    padding:2.5vh 2.5vh 2.5vh 1vh;
+    color:white;
+    text-shadow: 0 0 5px black;
+    background:rgba(0,0,0,0.3);
+    font-size: 8vh;
+}
+
+.extraTopPadding{
+    padding-top:3vh;
+}
+.cardContainer{
+    height:fit-content;
+}
+.para{
+    font-size: 1.75vh;
+    color:#fff;
+}
+.prevArrow{
+    top:0;
+position:absolute;
+align-items: center;
+justify-content: center;
+left:0;
+color:white;
+text-shadow: 0 0 5px black;
+font-size: 8vh;
+z-index: 1;
+background:rgba(0,0,0,0.3);
+display:flex;
+height:100%;
+padding:2.5vh 1vh 2.5vh 2.5vh ;
+}
+
+
+.desc{
+    z-index: 2;
+    position: relative;
+    top:-2vh;
+    visibility:hidden;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+background:linear-gradient(rgba(27,37,48,0),rgba(27,37,48,1),#1b2530 20px);
+    padding:2vh;
+}
+.heading{
+    color:#fff;
+    margin-left:7vh;
+}
+.tag{
+    color:rgb(0, 83, 190);
+    text-transform: capitalize;
+}
+
+.name{
+    color:#fff;
+    text-transform: capitalize;
+}
+
+.play{
+    width:fit-content;
+    height:4.5vh;
+    width:4.5vh;
+    background:black;
+    text-align: center;
+    display:flex;
+    cursor:pointer;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #fff;
+    border-radius: 999px;
+    transition-duration: 500ms;
+}
+
+.play:hover{
+    border-color:#0f79af;
+    background:#0f79af;
+}
+
+.topHead{
+    display:flex;
+    align-items: center;
+}
+
+.playTxt{
+    color:#fff;
+    margin-left: 2vh;
+}
+
+.sideicons{
+    margin-left: auto;
+    color:#fff;
+    font-size: 2vh;
+    -webkit-text-stroke: red;
+}
+
+.sideicons i{
+    padding:0 0.5vh;
+}
+
+.time{
+    font-size: 1.75vh;
+    color:#fff;
+    display:flex;
+    align-items: center;
+}
+.message{
+    margin-left: auto;
+    margin-right: 1vh;
+    font-size: 2vh;
+}
+
+.border{
+    border:1px solid #fff;
+}

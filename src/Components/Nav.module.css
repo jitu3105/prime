@@ -1,0 +1,153 @@
+.nav{
+    background:#0f171e;
+    display:flex;
+}
+
+
+.logoimg{
+    width:20vh;
+    padding:2.5vh;
+}
+
+.leftNav{
+    display:flex;
+    align-items: center;
+    height:100%;
+    margin-left: 5vh;
+}
+.rightNavcont{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.avatarcontainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightNav{
+    display:flex;
+    align-items: center;
+    margin-right: 5vh;
+}
+.subLeftNav{
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.navLinks{
+ margin:1vh;
+ color:white;
+ text-decoration: none;
+
+}
+
+.navLinks:hover{
+    text-decoration: underline;
+}
+
+.userAvatar{
+    border-radius: 999px;
+    overflow: hidden;
+    width:5vh;
+    height:5vh;
+    margin-left: 1vh;
+}
+.userAvatar img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.name{
+    color:white;
+    margin-left:1vh;
+}
+.searchInput{
+    background:transparent;
+    outline:none;
+    color:white;
+    margin-left: 1vh;
+    font-size: 2.5vh;
+}
+.searchbox{
+    font-size: 2.5vh;
+    display:flex;
+    color:rgba(255,255,255,0.5);
+    align-items: center;
+    justify-content: center;
+    padding:1vh;
+    border:0.5px solid rgba(255,255,255,0.5);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255,255,255,0.5);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255,255,255,0.5);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255,255,255,0.5);
+  }
+  @media (min-width:1000px){
+    .phoneMenu{
+        display:none!important;
+    }
+    .timescont{
+        display:none!important;
+        
+    }
+  }
+
+  @media (max-width:1000px){
+    .rightNavcont{
+        position:fixed;
+        top:0;
+        left:-100vw;
+        z-index:5000;
+        background:#0f171e;
+        height:100vh;
+        width:100vw;
+        flex-direction: column-reverse;
+        padding:10vh;
+    }
+    .subLeftNav{
+        flex-direction: column;
+        height:100%;
+        padding:5vh;
+        justify-content: space-between;
+        width:100%;
+    }
+    .rightNav{
+        
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+  }
+
+  .timescont{
+      display:flex;
+      width:100%;
+      font-size: larger;
+      justify-content: right;
+    color:#fff;
+  }
+  .phoneMenu{
+      padding:2vh;
+      height:8vh;
+      display: flex;
+      font-size: larger;
+      color:#fff;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: 5vh;
+  }
+  .phoneshow{
+      left:0;
+  }
